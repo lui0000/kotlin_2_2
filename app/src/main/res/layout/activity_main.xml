@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button_first"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="30dp"
+        android:text="Fragment 1" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Fragment 2" />
+
+    <Button
+        android:id="@+id/button_third"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:text="Fragment 3" />
+
+</RelativeLayout>
